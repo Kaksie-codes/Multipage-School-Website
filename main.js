@@ -22,3 +22,23 @@ faqs.forEach((faq) => {
         }
     })
 })
+
+
+//Open and close nav menu
+const menu = document.querySelector('.nav__menu');
+const openMenuBtn = document.querySelector('.open-menu-btn');
+const closeMenuBtn = document.querySelector('.close-menu-btn');
+
+openMenuBtn.addEventListener('click', () => {
+    // menu.classList.add('show');
+    menu.style.display = 'flex'
+    openMenuBtn.style.display = 'none'
+    closeMenuBtn.style.display = 'inline-block'
+});
+
+closeMenuBtn.addEventListener('click', () => {
+    // menu.classList.remove('show');
+    menu.style.display = 'none'
+    openMenuBtn.style.display = 'inline-block'
+    closeMenuBtn.style.display = 'none'
+})
